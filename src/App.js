@@ -7,11 +7,31 @@ import Contact from './components/Contact.component'
 import Projects from './components/Projects.component'
 import Resume from './components/Resume.component'
 import Landingpage from './components/Landingpage.component'
+import CubeGrid from 'styled-loaders-react/lib/components/CubeGrid';
+
+
+
 
 export default class App extends Component {
+  
+  state={
+    loading:true
+  }
+  
+  componentDidMount(){
+    setTimeout(() => {
+      this.setState({
+        loading:false
+      })
+    },1500);
+  }
+
+
   render(){
   return (
     <div className="demo-big-content">
+    {this.state.loading ? <CubeGrid color="grey" /> 
+  : 
     <div className="mdl-layout--no-desktop-drawer-button">
     <Router>
     <Layout>
@@ -59,6 +79,7 @@ export default class App extends Component {
         </Layout>
     </Router>
     </div>
+    }
     </div>
   );
 }

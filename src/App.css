@@ -108,6 +108,16 @@ line-height: 1.1em;
   padding: 8px;
 }
 
+.preloader-homepage{
+  height: 100vh;
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  color:red;
+  vertical-align: ;
+}
+
 .banner{
   background-color: black;
   opacity: .8;
