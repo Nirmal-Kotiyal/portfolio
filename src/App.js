@@ -23,7 +23,7 @@ export default class App extends Component {
       this.setState({
         loading:false
       })
-    },1500);
+    },2000);
   }
 
 
@@ -58,7 +58,7 @@ export default class App extends Component {
             </div>
       </HeaderRow>
         </Header>
-        <Drawer  title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">MyPortfolio</Link>}>
+        <Drawer  title={<Link style={{textDecoration: 'none', color: 'black'}} to="/"><i className="fa fa-home" aria-hidden="true"></i></Link>}>
             <Navigation > 
                     <Link to="/resume">Resume</Link>
                     <Link to="/projects">Projects</Link>

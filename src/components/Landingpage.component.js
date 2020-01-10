@@ -26,7 +26,6 @@ render(){
                   backDelay={1000}
                   loopCount={0}
                   showCursor
-                  className="self-typed"
                   cursorChar="|"
                 />
             </Cell>
