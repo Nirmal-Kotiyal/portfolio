@@ -24,7 +24,7 @@ render(){
        <input type="hidden" name="contact" value="contact" />
       <Grid>
 
-      <Cell cl  assName="contactform-text" col={12}>
+      <Cell className="contactform-text" col={12}>
       <h1>Want To Know More!!!</h1>
       </Cell>
       <Cell className="contactform-text" col={12}>
