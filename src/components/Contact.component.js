@@ -17,7 +17,7 @@ render(){
  const roles=['Fill','The','Form','Below'];
     return(
       <div className="contact-form">
-     <form method="POST" netlify>
+     <form action="POST" netlify>
       <Grid>
 
       <Cell className="contactform-text" col={12}>
