@@ -17,8 +17,9 @@ render(){
  const roles=['Fill','The','Form','Below'];
     return(
       <div className="contact-form">
-     <form method="post"
+     <form method="POST"
      name="contact"
+     action="/sucess"
      >
        <input type="hidden" name="form" value="contact" />
       <Grid>
