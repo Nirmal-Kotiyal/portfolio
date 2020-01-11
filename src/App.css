@@ -338,8 +338,10 @@ padding-top: 5em;
 .contactform-text{
   padding-top: 32px;
 }
-.header-color ul{
-display: none;
+.header-row{
+  padding: 0;
+  margin: 0;
+  position: none;
 }
 
 }
