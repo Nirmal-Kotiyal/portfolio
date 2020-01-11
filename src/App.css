@@ -323,11 +323,21 @@ padding-top: 5em;
 }
 }
 @media only screen and (max-width:1027px) {
+.contact-form{
+ padding: 0px;
+ margin: 0px;
+ position: none;
+}
+.landing-grid{
+  padding: 0px;
+  margin: 0px;
+}
+.profile-cell{
+  padding-top: 64px;
+}
+.contactform-text{
+  padding-top: 64px;
+}
 
-  .page-wrap,
-  .page .page-wrap .content-wrapper, 
-  .single .page-wrap .content-wrapper {
-    padding-top: 0 !important;
-  }
-  
+
 }
