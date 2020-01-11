@@ -17,15 +17,13 @@ render(){
  const roles=['Fill','The','Form','Below'];
     return(
       <div className="contact-form">
-     <form method="POST"
+     <form method="post"
      name="contact"
-     data-netlify="true"
-     data-netlify-honeypot="bot-field"
      >
-       <input type="hidden" name="form-name" value="contact" />
+       <input type="hidden" name="form" value="contact" />
       <Grid>
 
-      <Cell className="contactform-text" col={12}>
+      <Cell cl  assName="contactform-text" col={12}>
       <h1>Want To Know More!!!</h1>
       </Cell>
       <Cell className="contactform-text" col={12}>
