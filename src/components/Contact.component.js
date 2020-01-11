@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import Typed from 'react-typed'
-import {Grid,Cell,Textfield,Button} from 'react-mdl'
+import {Grid,Cell,Textfield} from 'react-mdl'
 
 
 export default class Contact extends Component{
@@ -16,48 +16,27 @@ onchangename=(e)=>{
   this.setState({
     name:e.target.value
   })
-console.log(this.state.name)
 }
 
 onchangeemail=(e)=>{
   this.setState({
     email:e.target.value
   })
-console.log(this.state.email)
 }
 
 onchangemessage=(e)=>{
   this.setState({
     message:e.target.value
   })
-console.log(this.state.message)
 }
 
-onsubmitform=(e)=>{
-if(this.state.email!=null&&this.state.name!=null&&this.state.message!=null){
-
-}
-else{
-  if(this.state.email==null){
-
-  
-  }
-  else if(this.state.name==null){
-
-
-  }
-  else{
-  
-  }
-}
-}
 
 
 render(){
  const roles=['Fill','The','Form','Below'];
     return(
       <div className="contact-form">
-     <form>
+     <form action="POST" data-netlify="true">
       <Grid>
 
       <Cell className="contactform-text" col={12}>
@@ -79,6 +58,9 @@ render(){
       <Textfield
     onChange={this.onchangename}
     label=""
+    name="name"
+    required
+    id="name"
     style={{width:"100%",
     marginLeft:"40px"}}
     />
@@ -88,8 +70,11 @@ render(){
       <h1>Email</h1>  
       <Textfield
       type="email"
+      name="email"
+      required
     onChange={this.onchangeemail}
     label=""
+    id="email"
     style={{width:"100%",
     marginLeft:"40px"
     }}
@@ -100,15 +85,17 @@ render(){
       <Textfield
     onChange={this.onchangemessage}
     label=""
+    required
+    name="message"
+    id="message"
     rows={3}
     style={{width:"50%",
     marginLeft:"40px"}}
 />
     </Cell>
 
-
     <Cell className="contactform-button" col={12}>
-    <button type="button" onClick={this.onsubmitform} class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
       Send
 </button>
     </Cell>
