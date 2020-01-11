@@ -21,7 +21,7 @@ render(){
      name="contact"
      action="/sucess"
      >
-       <input type="hidden" name="form" value="contact" />
+       <input type="hidden" name="contact" value="contact" />
       <Grid>
 
       <Cell cl  assName="contactform-text" col={12}>
