@@ -339,10 +339,7 @@ padding-top: 5em;
   padding-top: 2px;
 }
 .header-row{
-  padding: 0;
-  margin: 0;
-  position: none;
-  display: none;
+  width: 0px;
 }
 
 }
