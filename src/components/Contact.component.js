@@ -12,36 +12,17 @@ state={
     
 }
 
-onchangename=(e)=>{
-  this.setState({
-    name:e.target.value
-  })
-}
-
-onchangeemail=(e)=>{
-  this.setState({
-    email:e.target.value
-  })
-}
-
-onchangemessage=(e)=>{
-  this.setState({
-    message:e.target.value
-  })
-}
-
-
 
 render(){
  const roles=['Fill','The','Form','Below'];
     return(
       <div className="contact-form">
-     <form action="POST" data-netlify="true">
+     <form method="POST" data-netlify="true">
       <Grid>
 
       <Cell className="contactform-text" col={12}>
       <h1>Want To Know More!!!</h1>
-      <Typed className="self-typed"
+      <h1><Typed className="self-typed"
                   loop
                   typeSpeed={60}
                   backSpeed={60}
@@ -50,13 +31,13 @@ render(){
                   loopCount={0}
                   showCursor
                   cursorChar="|"
-                />
+                /></h1>
+      
       </Cell>
         
       <Cell className="contactform-row1" col={6}>
       <h1>Name</h1>
       <Textfield
-    onChange={this.onchangename}
     label=""
     name="name"
     required
@@ -72,7 +53,6 @@ render(){
       type="email"
       name="email"
       required
-    onChange={this.onchangeemail}
     label=""
     id="email"
     style={{width:"100%",
@@ -83,7 +63,6 @@ render(){
     <Cell className="contactform-message" col={12}>
       <h1>Message</h1>
       <Textfield
-    onChange={this.onchangemessage}
     label=""
     required
     name="message"
