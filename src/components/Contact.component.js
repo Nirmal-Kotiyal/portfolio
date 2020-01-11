@@ -2,24 +2,46 @@ import React,{Component} from 'react'
 import Typed from 'react-typed'
 import {Grid,Cell,Textfield} from 'react-mdl'
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 
 export default class Contact extends Component{
 
-state={
-    name:'',
-    email:'',
-    message:''
-    
-}
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", message: "" };
+  }
+
+handleSubmit = e => {
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({ "form-name": "contact", ...this.state })
+  })
+    .then(() => alert("Success!"))
+    .catch(error => alert(error));
+
+  e.preventDefault();
+};
+
+handleChange = e => this.setState({ [e.target.name]: e.target.value });
+
 
 
 render(){
- const roles=['Fill','The','Form','Below'];
-    return(
+  
+  const { name, email, message } = this.state;
+  const roles=['Fill','The','Form','Below'];
+    
+  
+  return(
       <div className="contact-form">
      <form method="POST"
      name="contact"
-     action="/sucess"
+     onSubmit={this.handleSubmit}
      >
        <input type="hidden" name="contact" value="contact" />
       <Grid>
@@ -47,6 +69,7 @@ render(){
     name="name"
     required
     id="name"
+    value={name} onChange={this.handleChange}
     style={{width:"100%",
     marginLeft:"40px"}}
     />
@@ -58,6 +81,7 @@ render(){
       type="email"
       name="email"
       required
+      value={email} onChange={this.handleChange}
     label=""
     id="email"
     style={{width:"100%",
@@ -70,6 +94,7 @@ render(){
       <Textfield
     label=""
     required
+    value={message} onChange={this.handleChange}
     name="message"
     id="message"
     rows={3}
