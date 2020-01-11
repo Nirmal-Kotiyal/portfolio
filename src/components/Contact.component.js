@@ -17,12 +17,20 @@ render(){
  const roles=['Fill','The','Form','Below'];
     return(
       <div className="contact-form">
-     <form action="POST" netlify>
+     <form action="POST" netlify
+     name="contact"
+     method="post"
+     data-netlify="true"
+     data-netlify-honeypot="bot-field"
+     >
+       <input type="hidden" name="bot-field" />
       <Grid>
 
       <Cell className="contactform-text" col={12}>
       <h1>Want To Know More!!!</h1>
-      <h1><Typed className="self-typed"
+      </Cell>
+      <Cell className="contactform-text" col={12}>
+      <Typed className="self-typed"
                   loop
                   typeSpeed={60}
                   backSpeed={60}
@@ -31,8 +39,7 @@ render(){
                   loopCount={0}
                   showCursor
                   cursorChar="|"
-                /></h1>
-      
+                />
       </Cell>
         
       <Cell className="contactform-row1" col={6}>
