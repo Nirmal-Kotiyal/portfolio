@@ -81,7 +81,7 @@ render(){
     </Cell>
 
     <Cell className="contactform-button" col={12}>
-    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
       Send
 </button>
     </Cell>
