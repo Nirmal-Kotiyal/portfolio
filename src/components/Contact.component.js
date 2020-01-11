@@ -17,9 +17,9 @@ render(){
  const roles=['Fill','The','Form','Below'];
     return(
       <div className="contact-form">
-     <form action="POST" netlify
+     <form netlify
      name="contact"
-     method="post"
+     method="POST"
      data-netlify="true"
      data-netlify-honeypot="bot-field"
      >
