@@ -59,10 +59,20 @@ export default class App extends Component {
         </Header>
         <Drawer  title={<Link style={{textDecoration: 'none', color: 'black'}} to="/"><i className="fa fa-home" aria-hidden="true"></i></Link>}>
             <Navigation > 
-                    <Link to="/resume">Resume</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/aboutme">AboutMe</Link>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/resume">
+                      <p className="drawer">RESUME</p>
+                    </Link>
+                    <Link to="/projects">
+                      <p className="drawer">PROJECTS</p>
+                      </Link>
+                    <Link to="/aboutme">
+                      <p className="drawer">ABOUTME</p>
+                    </Link>
+                    <Link to="/contact">
+                      <p className="drawer">
+                        CONTACTS
+                      </p>
+                    </Link>
             </Navigation>
             </Drawer>
             <Content>
