@@ -23,7 +23,7 @@ render(){
      data-netlify="true"
      data-netlify-honeypot="bot-field"
      >
-       <input type="hidden" name="bot-field" />
+       <input type="hidden" name="bot-field" value="contact" />
       <Grid>
 
       <Cell className="contactform-text" col={12}>
@@ -81,7 +81,7 @@ render(){
     </Cell>
 
     <Cell className="contactform-button" col={12}>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
       Send
 </button>
     </Cell>
