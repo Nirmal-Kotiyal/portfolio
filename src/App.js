@@ -70,7 +70,7 @@ export default class App extends Component {
                     </Link>
                     <Link to="/contact">
                       <p className="drawer">
-                        CONTACTS
+                        CONTACT
                       </p>
                     </Link>
             </Navigation>
