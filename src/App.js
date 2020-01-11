@@ -7,7 +7,7 @@ import Contact from './components/Contact.component'
 import Projects from './components/Projects.component'
 import Resume from './components/Resume.component'
 import Landingpage from './components/Landingpage.component'
-import Sucess from './components/sucess'
+import Sucess from './components/Sucess.component'
 import CubeGrid from 'styled-loaders-react/lib/components/CubeGrid';
 
 
