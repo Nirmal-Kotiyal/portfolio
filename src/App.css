@@ -338,7 +338,7 @@ padding-top: 5em;
 .contactform-text{
   padding-top: 2px;
 }
-.header-row{
+.mdl-layout__header{
   min-height: 0px;
 }
 
