@@ -117,7 +117,7 @@ line-height: 1.1em;
   justify-content: center;
   align-items: center;
   color:red;
-  vertical-align: ;
+  vertical-align:middle;
 }
 
 .banner{
@@ -184,9 +184,6 @@ font-style: bold;
   padding-left: 2em;
 }
 
-.contactform-row2{
-}
-
 .contactform-row2 h1{
   font-family:'Raleway',sans-serif;
   font-style: bold;
@@ -197,9 +194,6 @@ font-style: bold;
   padding-left: 2em;
 }
 
-.contactform-message{
-
-}
 
 .contactform-message h1{
   font-family:'Raleway',sans-serif;
@@ -209,6 +203,21 @@ font-style: bold;
   color: white;
   margin: 0em;
   padding-left: 2em;
+}
+
+.contactform-button{
+  text-align: center;
+}
+
+.contactform-button button{
+  color: white;
+  font-family:'Raleway',sans-serif;
+  font-style: bold;
+  font-weight: 800;
+  letter-spacing: 1px;
+  background-color:grey;
+  height: 40px;
+  width: 90px;
 }
 
 .contact-grid h2 {
