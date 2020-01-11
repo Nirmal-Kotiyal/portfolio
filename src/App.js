@@ -11,7 +11,6 @@ import CubeGrid from 'styled-loaders-react/lib/components/CubeGrid';
 
 
 
-
 export default class App extends Component {
   
   state={
