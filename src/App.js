@@ -34,7 +34,7 @@ export default class App extends Component {
     <div className="mdl-layout--no-desktop-drawer-button">
     <Router>
     <Layout>
-    <Header className="header-color" scroll>
+    <Header waterfall hideTop className="header-color" scroll>
       <HeaderRow className="header-row">
             <div className="container-small">
             <ul>

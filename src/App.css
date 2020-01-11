@@ -322,3 +322,12 @@ padding-top: 5em;
   margin-top: 76px;
 }
 }
+@media only screen and (max-width:1027px) {
+
+  .page-wrap,
+  .page .page-wrap .content-wrapper, 
+  .single .page-wrap .content-wrapper {
+    padding-top: 0 !important;
+  }
+  
+}
