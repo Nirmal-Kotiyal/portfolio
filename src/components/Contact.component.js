@@ -97,8 +97,7 @@ render(){
     value={message} onChange={this.handleChange}
     name="message"
     id="message"
-    rows={3}
-    style={{width:"50%",
+    style={{width:"100%",
     marginLeft:"40px"}}
 />
     </Cell>
