@@ -344,6 +344,11 @@ padding-top: 5em;
   height: 0px;
   display: none;
 }
-
+.mdl-layout__header-row{
+  max-height: 0px;
+  min-height: 0px;
+  height: 0px;
+  display: none;
+}
 
 }
