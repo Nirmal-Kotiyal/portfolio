@@ -338,8 +338,10 @@ padding-top: 5em;
 .contactform-text{
   padding-top: 2px;
 }
-.mdl-layout__header{
+.container-small{
+  max-height: 0px;
   min-height: 0px;
+  height: 0px;
 }
 
 
