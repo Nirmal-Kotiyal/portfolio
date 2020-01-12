@@ -366,6 +366,11 @@ margin-left: 10px;
   margin-left: 10px!important
 }
 
+.mdl-grid{
+  overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
 }
 
 .drawer{
