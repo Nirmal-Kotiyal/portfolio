@@ -44,8 +44,7 @@ render(){
      onSubmit={this.handleSubmit}
      >
        <input type="hidden" name="contact" value="contact" />
-       <div className="contactscroll" style={{display:"flex"}}>
-      <Grid>
+      <Grid className="contactscroll">
       <Cell className="contactform-text" col={12}>
       <h1>Want To Know More!!!</h1>
       </Cell>
@@ -108,7 +107,6 @@ render(){
 </button>
     </Cell>
     </Grid>
-    </div>  
      </form>
      </div>
     )
