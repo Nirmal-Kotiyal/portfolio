@@ -208,8 +208,7 @@ justify-content: center;
 }
 
 .contactform-button{
-  display: block;
-  text-align: left;
+  text-align: center;
 }
 
 .contactform-button button{
@@ -373,6 +372,7 @@ margin-left: 10px;
 
 
 .contact-form{
+  height: 100%;
   overflow: scroll;
   -webkit-overflow-scrolling: touch!important;
 }
