@@ -290,6 +290,9 @@ justify-content: center;
 .text-image{
   font-size: medium;
 }
+.contactscroll{
+  display: flex;
+}
 
 @media only screen and (max-width: 812px) {
 .landing-grid{
