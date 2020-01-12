@@ -100,7 +100,6 @@ render(){
     // marginLeft:"40px"}}
 />
     </Cell>
-
     <Cell className="contactform-button" col={12}>
     <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
       Send

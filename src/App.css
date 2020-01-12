@@ -376,6 +376,10 @@ margin-left: 10px;
   -webkit-overflow-scrolling: touch!important;
 }
 
+.mdl-cell.mdl-cell--12-col.contactform-text{
+  margin-bottom: 10px;
+}
+
 }
 
 .drawer{
