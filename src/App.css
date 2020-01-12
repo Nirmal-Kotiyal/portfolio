@@ -290,9 +290,6 @@ justify-content: center;
 .text-image{
   font-size: medium;
 }
-.contactscroll{
-  display: flex;
-}
 
 @media only screen and (max-width: 812px) {
 .landing-grid{
@@ -313,6 +310,11 @@ padding-top: 5em;
   padding-top: 40px;
 }
 
+.contactscroll{
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch !important;
+}
+
 }
 @media only screen and (min-width: 813px){
 .profile-cell img{
@@ -320,6 +322,12 @@ padding-top: 5em;
   margin-right: 334px;
   margin-top: 76px;
 }
+
+.contactscroll{
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch !important;
+}
+
 }
 @media only screen and (max-width:1027px) {
 .contact-form{
