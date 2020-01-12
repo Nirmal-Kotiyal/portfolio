@@ -368,7 +368,7 @@ margin-left: 10px;
 
 .mdl-grid{
   overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch !important;
 }
 
 }
