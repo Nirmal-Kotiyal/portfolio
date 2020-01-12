@@ -45,7 +45,7 @@ render(){
      >
        <input type="hidden" name="contact" value="contact" />
       <Grid>
-
+        <div className="contactscroll">
       <Cell className="contactform-text" col={12}>
       <h1>Want To Know More!!!</h1>
       </Cell>
@@ -108,7 +108,7 @@ render(){
 </button>
     </Cell>
 
-
+    </div>
     </Grid>  
      </form>
      </div>
