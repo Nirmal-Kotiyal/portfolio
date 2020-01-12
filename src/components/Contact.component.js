@@ -46,10 +46,14 @@ render(){
        <input type="hidden" name="contact" value="contact" />
       <Grid className="contactscroll">
       <Cell className="contactform-text" col={12}>
-      <h1>Want To Know More!!!</h1>
+      <h1>Want To Know More??</h1>
+      </Cell>
+      <Cell className="contactform-text" style={{marginTop:"10px",marginBottom:"10px"}} col={12}>
+      <h3>Just Drop A Message Below And I'll Get In Touch!</h3>
       </Cell>
       <Cell className="contactform-text" col={12}>
-      <Typed className="self-typed"
+      <h3>
+        <Typed className="self-typed"
                   loop
                   typeSpeed={60}
                   backSpeed={60}
@@ -59,6 +63,7 @@ render(){
                   showCursor
                   cursorChar="|"
                 />
+      </h3>
       </Cell>
         
       <Cell className="contactform-row1" col={6}>
@@ -69,8 +74,6 @@ render(){
     required
     id="name"
     value={name} onChange={this.handleChange}
-    // style={{width:"100%",
-    // marginLeft:"40px"}}
     />
       </Cell>
 
@@ -83,9 +86,6 @@ render(){
       value={email} onChange={this.handleChange}
     label=""
     id="email"
-    // style={{width:"100%",
-    // marginLeft:"40px"
-    // }}
     />
       </Cell>
     <Cell className="contactform-message" col={12}>
@@ -96,8 +96,6 @@ render(){
     value={message} onChange={this.handleChange}
     name="message"
     id="message"
-    // style={{width:"100%",
-    // marginLeft:"40px"}}
 />
     </Cell>
     <Cell className="contactform-button" col={12}>
