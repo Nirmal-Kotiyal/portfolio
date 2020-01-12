@@ -4,6 +4,7 @@ export default class Aboutme extends Component{
 
 render(){
     return(
+      <div classname="coloraboutme">
       <div className="aboutme-body">
       <Grid className="aboutme-grid">
           <Cell col={6} >
@@ -53,6 +54,7 @@ render(){
          </div>
           </Cell>
       </Grid>
+     </div>
      </div>
     )
 }
