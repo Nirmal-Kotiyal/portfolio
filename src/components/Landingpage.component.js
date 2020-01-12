@@ -42,7 +42,7 @@ render(){
                         <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                     </a>
                     <a href="http://github.com" target="_blank"  rel="noopener noreferrer">
-                    <i className="fa fa-github" aria-hidden="true"></i>
+                    <i className="fa fa-github" aria-hidden="true" spin="true"></i>
                     </a>
             </Cell>
         </Grid>

@@ -108,6 +108,12 @@ line-height: 1.1em;
   padding: 8px;
 }
 
+.landingpage-icon:hover i{
+  color: blue;
+  transition: 0.9s;
+  transform: rotateZ(360deg);
+}
+
 .preloader-homepage{
   height: 100vh;
   width: 100%;
@@ -241,6 +247,8 @@ margin-bottom: 12px;
   border-bottom-left-radius: 50% 50%;
   vertical-align: middle;
 }
+
+
 .aboutme-body{
   background: #FF5F6D;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
