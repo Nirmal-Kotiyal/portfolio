@@ -372,7 +372,7 @@ margin-left: 10px;
 
 
 .contact-form{
-  height: calc(100%-100px);
+  height: calc(100%-50px);
   overflow: scroll;
   -webkit-overflow-scrolling: touch!important;
 }
