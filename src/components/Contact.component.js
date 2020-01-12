@@ -70,8 +70,8 @@ render(){
     required
     id="name"
     value={name} onChange={this.handleChange}
-    style={{width:"100%",
-    marginLeft:"40px"}}
+    // style={{width:"100%",
+    // marginLeft:"40px"}}
     />
       </Cell>
 
@@ -84,9 +84,9 @@ render(){
       value={email} onChange={this.handleChange}
     label=""
     id="email"
-    style={{width:"100%",
-    marginLeft:"40px"
-    }}
+    // style={{width:"100%",
+    // marginLeft:"40px"
+    // }}
     />
       </Cell>
     <Cell className="contactform-message" col={12}>
@@ -97,8 +97,8 @@ render(){
     value={message} onChange={this.handleChange}
     name="message"
     id="message"
-    style={{width:"100%",
-    marginLeft:"40px"}}
+    // style={{width:"100%",
+    // marginLeft:"40px"}}
 />
     </Cell>
 
