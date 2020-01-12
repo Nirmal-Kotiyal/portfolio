@@ -208,7 +208,9 @@ justify-content: center;
 }
 
 .contactform-button{
+  display: block;
   text-align: center;
+  justify-content: center;
 }
 
 .contactform-button button{
