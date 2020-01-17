@@ -106,10 +106,11 @@ line-height: 1.1em;
   color: white;
   font-size: 5em;
   padding: 8px;
+  
 }
 
 .landingpage-icon:hover i{
-  color: blue;
+  color:#555;
   transition: 0.9s;
   transform: rotateZ(360deg);
 }
@@ -231,7 +232,7 @@ margin-bottom: 12px;
   font-style: bold;
   font-weight: 800;
   letter-spacing: 1px;
-  background-color:grey;
+  background-color:#f5a623;
   height: 40px;
   width: 90px;
 }
@@ -249,11 +250,7 @@ margin-bottom: 12px;
 }
 
 
-.aboutme-body{
-  background: #FF5F6D;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+
 .aboutme-body{
   margin: auto;
   position: fixed;
@@ -267,23 +264,25 @@ margin-bottom: 12px;
   justify-content: center;
   width: 80%;
   height: 550px;
-  color:white;
+  color:black;
   margin-bottom: 20px;
 }
 .aboutme-grid h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 5px;
   margin-bottom: 15px;
-  color:white;
+  color:#f5a623;
+  font-weight: 700;
 } 
 
 .aboutme-grid p {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #555;
 }
 
 .aboutme-grid hr {
-  border-top: 5px dotted black;
+  border-top: 5px dotted #555;
   width: 50%;
   padding: 10px;
   margin: auto;
@@ -298,7 +297,7 @@ margin-bottom: 12px;
 .aboutme-list i{
   font-size: 15px;
   padding-right: 2rem;
-  color: black;
+  color: #555;
 }
 .avatar-img {
   height: 250px;

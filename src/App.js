@@ -22,7 +22,7 @@ export default class App extends Component {
       this.setState({
         loading:false
       })
-    },2500);
+    },3500);
   }
 
 

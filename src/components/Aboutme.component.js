@@ -27,25 +27,25 @@ render(){
          <div className="aboutme-list">
            <List>
              <ListItem>
-               <ListItemContent className="phone-icon" style={{fontSize: '25px', fontFamily: 'Montserrat',color:"white"}}>
+               <ListItemContent className="phone-icon" style={{fontSize: '25px', fontFamily: 'Montserrat',color:"#555"}}>
                  <i className="fa fa-circle" aria-hidden="true"/>
                  Node.js
                </ListItemContent>
              </ListItem>
              <ListItem>
-               <ListItemContent style={{fontSize: '25px', fontFamily: 'Montserrat',color:"white"}}>
+               <ListItemContent style={{fontSize: '25px', fontFamily: 'Montserrat',color:"#555"}}>
                  <i className="fa fa-circle" aria-hidden="true"/>
                  React
                </ListItemContent>
              </ListItem>
              <ListItem>
-               <ListItemContent style={{fontSize: '25px', fontFamily: 'Montserrat',textAlign:'left',color:"white"}}>
+               <ListItemContent style={{fontSize: '25px', fontFamily: 'Montserrat',textAlign:'left',color:"#555"}}>
                  <i className="fa fa-circle" aria-hidden="true"/>
                  MongoDB
                </ListItemContent>
              </ListItem>
              <ListItem>
-               <ListItemContent style={{fontSize: '25px', fontFamily: 'Montserrat',color:"white"}}>
+               <ListItemContent style={{fontSize: '25px', fontFamily: 'Montserrat',color:"#555"}}>
                  <i className="fa fa-circle" aria-hidden="true"/>
                  Java
                </ListItemContent>

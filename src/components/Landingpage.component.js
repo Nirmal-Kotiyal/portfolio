@@ -38,11 +38,11 @@ render(){
             <hr />
             </Cell>
             <Cell style={{margin:"0"}} className="landingpage-icon" col={12}>
-                        <a href="http://linkedin.com" target="_blank"  rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/nirmal-kotiyal-6ba042195/" target="_blank"  rel="noopener noreferrer">
                         <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                     </a>
-                    <a href="http://github.com" target="_blank"  rel="noopener noreferrer">
-                    <i className="fa fa-github" aria-hidden="true" spin="true"></i>
+                    <a href="https://github.com/Nirmal-Kotiyal" target="_blank"  rel="noopener noreferrer">
+                    <i className="fa fa-github" aria-hidden="true"></i>
                     </a>
             </Cell>
         </Grid>
