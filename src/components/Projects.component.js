@@ -10,6 +10,10 @@ constructor(props){
     }
 }
 
+onclickreactprojecttab1=()=>{
+
+}
+
 togglecategories=()=>{
     console.log(this.state.activetab);
 if(this.state.activetab===0){
@@ -21,8 +25,8 @@ if(this.state.activetab===0){
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
         </CardText>
         <CardActions border>
-          <Button colored>GitHub</Button>
-          <Button colored>Live Demo</Button>
+          <Button colored><a href="https://github.com/Nirmal-Kotiyal/nodejs-mongodb-login-system" target="_blank" rel="noopener noreferrer" style={{color:"black",textDecoration:"none",fontWeight:"600"}}>GitHub</a></Button>
+          <Button colored><a href="https://quiet-beyond-26748.herokuapp.com" target="_blank" rel="noopener noreferrer" style={{color:"black",textDecoration:"none",fontWeight:"600"}}>Live Demo</a></Button>
         </CardActions>
         <CardMenu style={{color: '#fff'}}>
           <IconButton name="share" />
