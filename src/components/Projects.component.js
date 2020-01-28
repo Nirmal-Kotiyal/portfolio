@@ -58,13 +58,13 @@ else{
     return(
       <div className="projectcard">
         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBobzGJEci3aMRhyqRTp7QBlIW8QyE_Eve4mMGti7MdeHKpx-S&s) center / cover'}} >Android</CardTitle>
-        <CardText>
-          Android Project
+        <CardTitle style={{fontFamily:"Open Sans",fontWeight:900, color: '#555', height: '176px', background: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBobzGJEci3aMRhyqRTp7QBlIW8QyE_Eve4mMGti7MdeHKpx-S&s) center / cover'}} ></CardTitle>
+        <CardText style={{fontFamily:"Open Sans",fontWeight:300,color:'#555'}}>
+          Two Player Tic-Tac-Toe Game
         </CardText>
         <CardActions border>
-          <Button colored>GitHub</Button>
-          <Button colored>Live Demo</Button>
+        <Button colored><a href="https://github.com/Nirmal-Kotiyal/tic-tac-toe" target="_blank" rel="noopener noreferrer" style={{color:"#f5a623",textDecoration:"none",fontWeight:"600"}}>GitHub</a></Button>
+          <Button colored disabled>Live Demo</Button>
         </CardActions>
         <CardMenu style={{color: '#fff'}}>
           <IconButton name="share" />
