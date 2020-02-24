@@ -312,6 +312,10 @@ margin-bottom: 12px;
   font-size: medium;
 }
 
+.projectcard{
+  display: flex;
+  }
+
 @media only screen and (max-width: 812px) {
 .landing-grid{
 margin-top: 5em;
@@ -327,6 +331,9 @@ padding-top: 5em;
   padding-top: 40px;
 }
 
+.projectcard{
+  display: grid;
+  }
 
 }
 @media only screen and (min-width: 813px){
@@ -347,9 +354,7 @@ padding-top: 5em;
 
 }
 
-.projectcard{
-display: flex;
-}
+
 
 
 @media only screen and (max-width:1027px) {
@@ -419,6 +424,7 @@ margin-left: 10px;
 .mdl-cell.mdl-cell--12-col.contactform-text{
   margin-bottom: 10px;
 }
+
 
 }
 
