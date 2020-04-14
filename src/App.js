@@ -12,7 +12,7 @@ import createHistory from 'history/createBrowserHistory'
 import ReactGA from 'react-ga';
 
 const history = createHistory()
-ReactGA.initialize('UA-163561999-1');
+ReactGA.initialize('UA-163542807-1');
 history.listen((location, action) => {
     ReactGA.pageview(location.pathname + location.search);
 });
@@ -25,8 +25,7 @@ export default class App extends Component {
   }
   
 
-  componentDidMount(){
-    
+  componentDidMount(){   
     setTimeout(() => {
       this.setState({
         loading:false

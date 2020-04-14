@@ -1,8 +1,8 @@
 import React,{Component} from 'react'
 import { Grid, Cell } from 'react-mdl'
 import Typed from 'react-typed'
-
 export default class Landingpage extends Component{
+
     render(){
     const roles =['Java', 'Node.js', 'React.js', 'Android'];
     return(
