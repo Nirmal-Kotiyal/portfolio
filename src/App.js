@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React,{Component} from 'react';
 import './App.css';
 import {Layout,Header,Navigation,Drawer,Content, HeaderRow} from 'react-mdl'
@@ -50,6 +52,7 @@ export default class App extends Component {
                   <Link to="/"><i className="fa fa-home" aria-hidden="true"> </i></Link>  
                   </li>
                   <li>
+                  
                   <Link to="/projects"><a>PROJECTS</a></Link>
                   </li>
                   <li>
