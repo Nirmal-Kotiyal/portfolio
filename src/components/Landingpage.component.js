@@ -1,8 +1,9 @@
 import React,{Component} from 'react'
 import { Grid, Cell } from 'react-mdl'
 import Typed from 'react-typed'
+
 export default class Landingpage extends Component{
-render(){
+    render(){
     const roles =['Java', 'Node.js', 'React.js', 'Android'];
     return(
      <div className="landing-grid" style={{width:'100%',margin:'auto'}}>

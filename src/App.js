@@ -1,14 +1,21 @@
 import React,{Component} from 'react';
 import './App.css';
 import {Layout,Header,Navigation,Drawer,Content, HeaderRow} from 'react-mdl'
-import { BrowserRouter as Router, Route,Switch, Link} from "react-router-dom";
+import { Router, Route,Switch, Link} from "react-router-dom";
 import Aboutme from './components/Aboutme.component'
 import Contact from './components/Contact.component'
 import Projects from './components/Projects.component'
 import Resume from './components/Resume.component'
 import Landingpage from './components/Landingpage.component'
 import CubeGrid from 'styled-loaders-react/lib/components/CubeGrid';
+import createHistory from 'history/createBrowserHistory'
+import ReactGA from 'react-ga';
 
+const history = createHistory()
+ReactGA.initialize('UA-163561999-1');
+history.listen((location, action) => {
+    ReactGA.pageview(location.pathname + location.search);
+});
 
 
 export default class App extends Component {
@@ -17,7 +24,9 @@ export default class App extends Component {
     loading:true
   }
   
+
   componentDidMount(){
+    
     setTimeout(() => {
       this.setState({
         loading:false
@@ -32,7 +41,7 @@ export default class App extends Component {
     {this.state.loading ? <CubeGrid color="grey" /> 
   : 
     <div className="mdl-layout--no-desktop-drawer-button">
-    <Router>
+    <Router history={history}>
     <Layout>
     <Header className="header-color" scroll>
       <HeaderRow className="header-row">
