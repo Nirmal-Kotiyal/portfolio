@@ -14,7 +14,14 @@ import createHistory from 'history/createBrowserHistory'
 import ReactGA from 'react-ga';
 
 const history = createHistory()
-ReactGA.initialize('UA-163542807-1');
+ReactGA.initialize('UA-163542807-1',{
+  debug: true,
+  titleCase: false,
+  gaOptions: {
+    userId: 163542807,
+    siteSpeedSampleRate:100
+  }
+});
 history.listen((location, action) => {
     ReactGA.pageview(location.pathname + location.search);
 });
