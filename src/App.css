@@ -269,7 +269,7 @@ margin-bottom: 12px;
 }
 .aboutme-grid h2 {
   font-family: 'Raleway', sans-serif;
-  margin: 5px;
+  margin: 10px;
   margin-bottom: 15px;
   color:#f5a623;
   font-weight: 700;
@@ -278,6 +278,7 @@ margin-bottom: 12px;
 .aboutme-grid p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  font-size: medium;
   color: #555;
 }
 
@@ -354,6 +355,12 @@ padding-top: 5em;
 
 }
 
+
+
+.nav-link:hover a{
+text-decoration: underline;
+text-decoration-thickness: 3px;
+}
 
 
 

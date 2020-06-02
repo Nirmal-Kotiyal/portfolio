@@ -1,6 +1,8 @@
 import React,{Component} from 'react'
 import { Grid, Cell } from 'react-mdl'
 import Typed from 'react-typed'
+import {motion} from 'framer-motion'
+
 export default class Landingpage extends Component{
 
     render(){
@@ -15,7 +17,7 @@ export default class Landingpage extends Component{
                 </img>
             </Cell>
             <Cell className="name-text" style={{margin:"0"}} col={12}> 
-             <h1>Nirmal Kotiyal</h1>   
+             <motion.h1>Nirmal Kotiyal</motion.h1>   
             </Cell>
 
             <Cell col={12}>
@@ -42,7 +44,7 @@ export default class Landingpage extends Component{
                         <a href="https://www.linkedin.com/in/nirmal-kotiyal-6ba042195/" target="_blank"  rel="noopener noreferrer">
                         <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                     </a>
-                    <a href="https://github.com/Nirmal-Kotiyal" target="_blank"  rel="noopener noreferrer">
+                    <a  href="https://github.com/Nirmal-Kotiyal" target="_blank"  rel="noopener noreferrer">
                     <i className="fa fa-github" aria-hidden="true"></i>
                     </a>
             </Cell>

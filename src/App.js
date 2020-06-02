@@ -12,7 +12,6 @@ import Landingpage from './components/Landingpage.component'
 import CubeGrid from 'styled-loaders-react/lib/components/CubeGrid';
 import createHistory from 'history/createBrowserHistory'
 import ReactGA from 'react-ga';
-
 const history = createHistory()
 ReactGA.initialize('UA-163542807-1',{
   debug: true,
@@ -24,6 +23,7 @@ ReactGA.initialize('UA-163542807-1',{
 });
 history.listen((location, action) => {
     ReactGA.pageview(location.pathname + location.search);
+  ReactGA.ga();
 });
 
 
@@ -42,6 +42,11 @@ export default class App extends Component {
     },3500);
   }
 
+  hideToggle=()=>{
+    var selectorId = document.querySelector('.mdl-layout');
+    selectorId.MaterialLayout.toggleDrawer();
+    console.log("working")
+}
 
   render(){
   return (
@@ -54,39 +59,38 @@ export default class App extends Component {
     <Header className="header-color" scroll>
       <HeaderRow className="header-row">
             <div className="container-small">
-            <ul>
+            <ul className="linkAnimation">
                   <li>
-                  <Link to="/"><i className="fa fa-home" aria-hidden="true"> </i></Link>  
+                  <Link className="nav-link" to="/"><i className="fa fa-home" aria-hidden="true"> </i></Link>  
+                  </li>
+                  <li>                 
+                  <Link className="nav-link" to="/projects"><a className="nav-link">PROJECTS</a></Link>
                   </li>
                   <li>
-                  
-                  <Link to="/projects"><a>PROJECTS</a></Link>
-                  </li>
-                  <li>
-                  <Link to="/aboutme"><a>ABOUTME</a></Link>
+                  <Link className="nav-link" to="/aboutme"><a>ABOUTME</a></Link>
                   </li>
                 <li>
-                <Link to="/resume"><a>RESUME</a></Link>
+                <Link className="nav-link" to="/resume"><a>RESUME</a></Link>
                 </li>
                 <li>
-                <Link to="/contact"><a>CONṬACTS</a></Link>
+                <Link className="nav-link" to="/contact"><a>CONṬACTS</a></Link>
                 </li>
             </ul>
             </div>
       </HeaderRow>
         </Header>
-        <Drawer  title={<Link style={{textDecoration: 'none', color: 'black'}} to="/"><i className="fa fa-home" aria-hidden="true"></i></Link>}>
+        <Drawer title={<Link onClick={()=>this.hideToggle()} style={{textDecoration: 'none', color: 'black'}} to="/"><i className="fa fa-home" aria-hidden="true"></i></Link>}>
             <Navigation > 
-                    <Link to="/resume">
+                    <Link onClick={()=>this.hideToggle()} to="/resume">
                       <p className="drawer">RESUME</p>
                     </Link>
-                    <Link to="/projects">
+                    <Link onClick={()=>this.hideToggle()} to="/projects">
                       <p className="drawer">PROJECTS</p>
                       </Link>
-                    <Link to="/aboutme">
+                    <Link onClick={()=>this.hideToggle()} to="/aboutme">
                       <p className="drawer">ABOUTME</p>
                     </Link>
-                    <Link to="/contact">
+                    <Link onClick={()=>this.hideToggle()} to="/contact">
                       <p className="drawer">
                         CONTACT
                       </p>
