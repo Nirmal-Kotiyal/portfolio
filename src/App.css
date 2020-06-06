@@ -315,7 +315,12 @@ margin-bottom: 12px;
 
 .projectcard{
   display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
   }
+
+
+
 
 @media only screen and (max-width: 812px) {
 .landing-grid{
@@ -335,6 +340,15 @@ padding-top: 5em;
 .projectcard{
   display: grid;
   }
+
+  .ant-carousel .slick-slide {
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+    background: #364d79;
+    overflow: hidden;
+  }
+
 
 }
 @media only screen and (min-width: 813px){
@@ -446,4 +460,14 @@ margin-left: 10px;
   
   margin-left: 40px;
   width: 100%;
+}
+
+
+@media only screen and (max-width:1022px) {
+
+.projectcard .mdl-card{
+  margin: 20px!important;
+  
+}
+
 }
