@@ -1,6 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React,{Component} from 'react'
 import { Grid,Cell,Tabs, Tab, Card ,CardTitle,CardActions,Button,CardText,CardMenu,IconButton} from 'react-mdl';
-// import ImageSlider from './utils/ImageSlider'
 import Carousel from 'react-material-ui-carousel'
 export default class Projects extends Component{
 
@@ -18,11 +18,11 @@ onclickreactprojecttab1=()=>{
 togglecategories=()=>{
     console.log(this.state.activetab);
     const images = ["/images/BugTracker/React.jpg","/images/BugTracker/login-system.jpg","/images/BugTracker/home-page.jpg","/images/BugTracker/list-bugs.jpg"]
-if(this.state.activetab===0){
+    const sortvisualizerimages = ["/images/SortVisualizer/React.jpg","/images/SortVisualizer/Home-page.jpg","/images/SortVisualizer/Bubble-Sorting.jpg","/images/SortVisualizer/Merge-Sorting.jpg","/images/SortVisualizer/End.jpg",]
+    if(this.state.activetab===0){
     return(
-      <div>
+      <div className="projectcard">
         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-        {/* <CardTitle style={{fontFamily:"Open Sans",fontWeight:900, color: '#555', height: '176px', background: 'url(data:image/jpeg;base64,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) center / cover'}} ></CardTitle> */}
    <CardTitle style={{justifyContent:"center",paddingTop:'10px'}}>
 <Carousel autoplay indicators={false} animation={"slide"} interval={2500}>
   {images.map(image=><img style={{maxHeight:"250px",width:'100%'}} src={image}></img>)}
@@ -34,6 +34,23 @@ if(this.state.activetab===0){
         <CardActions border>
           <Button colored><a href="https://github.com/Nirmal-Kotiyal/bug-progress-tracker" target="_blank" rel="noopener noreferrer" style={{color:"#f5a623",textDecoration:"none",fontWeight:"600"}}>GitHub</a></Button>
           <Button colored><a href="https://frozen-sands-93256.herokuapp.com/" target="_blank" rel="noopener noreferrer" style={{color:"#f5a623",textDecoration:"none",fontWeight:"600"}}>Live Demo</a></Button>
+        </CardActions>
+        <CardMenu style={{color: '#fff'}}>
+          <IconButton name="share" />
+        </CardMenu>
+      </Card>
+      <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+   <CardTitle style={{justifyContent:"center",paddingTop:'10px'}}>
+<Carousel autoplay indicators={false} animation={"slide"} interval={2500}>
+  {sortvisualizerimages.map(image=><img style={{maxHeight:"250px",width:'100%'}} src={image}></img>)}
+  </Carousel>     
+   </CardTitle>
+        <CardText style={{fontFamily:"Open Sans",fontWeight:300,color:'#555'}}>
+          Sorting Visualizer 
+        </CardText>
+        <CardActions border>
+          <Button colored><a href="https://github.com/Nirmal-Kotiyal/SortingVisualizer-React" target="_blank" rel="noopener noreferrer" style={{color:"#f5a623",textDecoration:"none",fontWeight:"600"}}>GitHub</a></Button>
+          {/* <Button disabled={true} colored><a href="https://frozen-sands-93256.herokuapp.com/" target="_blank" rel="noopener noreferrer" style={{color:"#f5a623",textDecoration:"none",fontWeight:"600"}}>Live Demo</a></Button> */}
         </CardActions>
         <CardMenu style={{color: '#fff'}}>
           <IconButton name="share" />
@@ -143,51 +160,4 @@ render(){
         </div>
     )
 }
-} 
-
-
-// import React,{useState} from 'react'
-// import {Tabs,Tab} from 'react-mdl'
-// import {Row,Col,Card} from 'antd';
-// import ImageSlider from './utils/ImageSlider'
-// function Projects() {
-//   const {Meta} = Card
-//   const [Activetab,setActivetab]  = useState(0)
-
-// const togglecategories=()=>{
-// if(Activetab===0){
-//   return(
-//     <div>
-//     <Col lg={6} md={8} xs={24}>
-//     <Card
-//             size="small"
-//             hoverable={true}
-//             cover={<ImageSlider images={['/images/profile_pic1.jpg','/images/profile_pic1.jpg']} />}
-//         >
-//             <Meta
-//                 title={'This is good'}
-//                 description={'Testing'}
-//             />
-//         </Card>
-//     </Col>
-//     </div>
-//   )
-// }
-// }
-
-
-//   return (
-//     <div>
-//       <Tabs activeTab={Activetab} onChange={tabId=>setActivetab(tabId)} ripple>
-//           <Tab>React</Tab>
-//           <Tab>NodeJs</Tab>
-//           <Tab>Android</Tab>      
-//           </Tabs>
-//           <Row align='middle' gutter={[16,16]}>
-//             {togglecategories()}
-//           </Row>
-//     </div>
-//   )
-// }
-
-// export default Projects
+}
