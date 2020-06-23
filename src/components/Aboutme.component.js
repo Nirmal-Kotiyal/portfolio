@@ -11,7 +11,13 @@ render(){
               <h2>
                   Nirmal Kotiyal
               </h2>
-          <p style={{ width: '75%', margin: 'auto', paddingTop: '2em'}}>Strong in design and integration with intuitive problem-solving skills. Proficient in JAVA,JAVASCRIPT,NODEJS,REACT and MongoDB. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Looking to start the career as an entry-level software engineer with a reputed firm driven by technology.
+              
+         <img
+           src="/images/profile_pic1.jpg"
+           alt="avatar"
+           style={{height: '250px'}}
+            />
+          <p style={{ width: '75%', margin: 'auto', paddingTop: '1em'}}>Strong in design and integration with intuitive problem-solving skills. Proficient in JAVA,JAVASCRIPT,NODEJS,REACT and MongoDB. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Looking to start the career as an entry-level software engineer with a reputed firm driven by technology.
           </p>
           </Cell>
 
