@@ -57,8 +57,10 @@ togglecategories=()=>{
     )
     }
 else if(this.state.activetab===1){
-  const BrickBreaker = ["/images/BrickBreaker/Start.JPG","/images/BrickBreaker/PowerUps.JPG","/images/BrickBreaker/SlowMo.JPG","/images/BrickBreaker/End.JPG","/images/BrickBreaker/Won.JPG"];
-    return(
+  const BrickBreaker = ["/images/BrickBreaker/java.png","/images/BrickBreaker/Start.JPG","/images/BrickBreaker/PowerUps.JPG","/images/BrickBreaker/SlowMo.JPG","/images/BrickBreaker/End.JPG","/images/BrickBreaker/Won.JPG"];
+  const PathFinding = ["/images/PathFinding/java.png","/images/PathFinding/Start.JPG","/images/PathFinding/End.JPG"];
+  
+  return(
       <div className="projectcard">
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
           <CardTitle style={{justifyContent:'center',minHeight:'261px'}}>
@@ -71,6 +73,23 @@ else if(this.state.activetab===1){
           </CardText>
           <CardActions border>
           <Button colored><a href="https://github.com/Nirmal-Kotiyal/BrickBreaker" target="_blank" rel="noopener noreferrer" style={{color:"#f5a623",textDecoration:"none",fontWeight:"600"}}>GitHub</a></Button>
+            <Button colored disabled>Live Demo</Button>
+          </CardActions>
+          <CardMenu style={{color: '#fff'}}>
+            <IconButton name="share" />
+          </CardMenu>
+        </Card>
+        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+          <CardTitle style={{justifyContent:'center',minHeight:'261px'}}>
+          <Carousel autoplay  animation={"slide"} interval={2500}>
+    {PathFinding.map(image=><img style={{maxHeight:"200px",width:'100%'}} src={image}></img>)}
+    </Carousel> 
+          </CardTitle>
+          <CardText style={{fontFamily:"Open Sans",fontWeight:300,color:'#555'}}>
+            A* PathFinding Visualizer
+          </CardText>
+          <CardActions border>
+          <Button colored><a href="https://github.com/Nirmal-Kotiyal/PathFindingVisualization" target="_blank" rel="noopener noreferrer" style={{color:"#f5a623",textDecoration:"none",fontWeight:"600"}}>GitHub</a></Button>
             <Button colored disabled>Live Demo</Button>
           </CardActions>
           <CardMenu style={{color: '#fff'}}>
