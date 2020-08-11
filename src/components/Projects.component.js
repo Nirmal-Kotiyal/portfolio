@@ -16,6 +16,7 @@ togglecategories=()=>{
     console.log(this.state.activetab);
     const images = ["/images/BugTracker/React.jpg","/images/BugTracker/login-system.jpg","/images/BugTracker/home-page.jpg","/images/BugTracker/list-bugs.jpg"]
     const sortvisualizerimages = ["/images/SortVisualizer/React.jpg","/images/SortVisualizer/Home-page.jpg","/images/SortVisualizer/Bubble-Sorting.jpg","/images/SortVisualizer/Merge-Sorting.jpg","/images/SortVisualizer/End.jpg",]
+    const covidtracker = ["/images/CovidTracker/React.jpg","/images/CovidTracker/cases.jpg","/images/CovidTracker/recovered.jpg","/images/CovidTracker/death.jpg"]
     if(this.state.activetab===0){
     return(
       <div className="projectcard">
@@ -31,6 +32,23 @@ togglecategories=()=>{
         <CardActions border>
           <Button colored><a href="https://github.com/Nirmal-Kotiyal/bug-progress-tracker" target="_blank" rel="noopener noreferrer" style={{color:"#f5a623",textDecoration:"none",fontWeight:"600"}}>GitHub</a></Button>
           <Button colored><a href="https://frozen-sands-93256.herokuapp.com/" target="_blank" rel="noopener noreferrer" style={{color:"#f5a623",textDecoration:"none",fontWeight:"600"}}>Live Demo</a></Button>
+        </CardActions>
+        <CardMenu style={{color: '#fff'}}>
+          <IconButton name="share" />
+        </CardMenu>
+      </Card>
+      <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+   <CardTitle style={{justifyContent:"center",minHeight:'261px'}}>
+<Carousel autoplay  animation={"slide"} interval={2500}>
+  {covidtracker.map(image=><img style={{maxHeight:"250px",width:'100%'}} src={image}></img>)}
+  </Carousel>     
+   </CardTitle>
+        <CardText style={{fontFamily:"Open Sans",fontWeight:300,color:'#555'}}>
+          Covid-19 Tracker Using Disease.sh Api
+        </CardText>
+        <CardActions border>
+          <Button colored><a href="https://github.com/Nirmal-Kotiyal/Covid19-Tracker" target="_blank" rel="noopener noreferrer" style={{color:"#f5a623",textDecoration:"none",fontWeight:"600"}}>GitHub</a></Button>
+          <Button colored><a href="https://gifted-shockley-e9ff75.netlify.app/" target="_blank" rel="noopener noreferrer" style={{color:"#f5a623",textDecoration:"none",fontWeight:"600"}}>Live Demo</a></Button>
         </CardActions>
         <CardMenu style={{color: '#fff'}}>
           <IconButton name="share" />
